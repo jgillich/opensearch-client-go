@@ -1,0 +1,26 @@
+name: Generate Code from OpenAPI
+
+on:
+  release:
+    types: [published]
+
+jobs:
+  generate_code:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Clean existing files
+        run: xargs rm -r <.openapi-generator/FILES
+      - name: Generate code
+        uses: hatamiarash7/openapi-generator@v0.2.0
+        with:
+          generator: go
+          openapi-url: https://raw.githubusercontent.com/opensearch-project/opensearch-api-specification/main/OpenSearch.openapi.json
+          output-dir: opensearch
+          command-args: --git-repo-id opensearch-client-go --git-user-id jgillich p packageName=opensearch
+      - name: Commit and push
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: Update generated code
