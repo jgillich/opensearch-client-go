@@ -38,7 +38,7 @@ docs/DataStream.md
 docs/DataStreamIndex.md
 docs/DataStreamStatus.md
 docs/DataStreamTimestampField.md
-docs/DefaultApi.md
+docs/DefaultAPI.md
 docs/DefaultOperator.md
 docs/DeleteActionGroupResponseContent.md
 docs/DeleteAllPitsResponseContent.md

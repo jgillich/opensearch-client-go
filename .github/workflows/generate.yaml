@@ -6,19 +6,20 @@ on:
       - main
 
 jobs:
-  generate_code:
+  generate:
     runs-on: ubuntu-latest
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-
+      - name: Clean existing files
+        run: xargs rm -r <.openapi-generator/FILES
       - name: Generate code
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: go
           openapi-url: https://raw.githubusercontent.com/opensearch-project/opensearch-api-specification/main/OpenSearch.openapi.json
-          command-args: --git-repo-id opensearch-client-go --git-user-id jgillich -p packageName=opensearch
+          command-args: --git-repo-id opensearch-client-go --git-user-id jgillich -p packageName=opensearch -o .
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
