@@ -12,8 +12,7 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v3
-      - name: Clean existing files
-        run: xargs rm -r <.openapi-generator/FILES
+
       - name: Generate code
         uses: hatamiarash7/openapi-generator@v0.2.0
         with:
