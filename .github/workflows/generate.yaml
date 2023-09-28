@@ -14,11 +14,10 @@ jobs:
         uses: actions/checkout@v3
 
       - name: Generate code
-        uses: hatamiarash7/openapi-generator@v0.2.0
+        uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: go
           openapi-url: https://raw.githubusercontent.com/opensearch-project/opensearch-api-specification/main/OpenSearch.openapi.json
-          output-dir: .
           command-args: --git-repo-id opensearch-client-go --git-user-id jgillich -p packageName=opensearch
       - name: Commit and push
         uses: stefanzweifel/git-auto-commit-action@v4
