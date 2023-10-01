@@ -20,11 +20,11 @@ type ExpandWildcards string
 
 // List of ExpandWildcards
 const (
-	ALL ExpandWildcards = "all"
-	OPEN ExpandWildcards = "open"
-	CLOSED ExpandWildcards = "closed"
-	HIDDEN ExpandWildcards = "hidden"
-	NONE ExpandWildcards = "none"
+	EXPANDWILDCARDS_ALL ExpandWildcards = "all"
+	EXPANDWILDCARDS_OPEN ExpandWildcards = "open"
+	EXPANDWILDCARDS_CLOSED ExpandWildcards = "closed"
+	EXPANDWILDCARDS_HIDDEN ExpandWildcards = "hidden"
+	EXPANDWILDCARDS_NONE ExpandWildcards = "none"
 )
 
 // All allowed values of ExpandWildcards enum

@@ -20,10 +20,10 @@ type StatusMember string
 
 // List of Status_Member
 const (
-	GREEN StatusMember = "green"
-	YELLOW StatusMember = "yellow"
-	RED StatusMember = "red"
-	ALL StatusMember = "all"
+	STATUSMEMBER_GREEN StatusMember = "green"
+	STATUSMEMBER_YELLOW StatusMember = "yellow"
+	STATUSMEMBER_RED StatusMember = "red"
+	STATUSMEMBER_ALL StatusMember = "all"
 )
 
 // All allowed values of StatusMember enum

@@ -20,8 +20,8 @@ type Relation string
 
 // List of Relation
 const (
-	EQ Relation = "eq"
-	GTE Relation = "gte"
+	RELATION_EQ Relation = "eq"
+	RELATION_GTE Relation = "gte"
 )
 
 // All allowed values of Relation enum

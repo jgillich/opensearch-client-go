@@ -20,10 +20,10 @@ type ClusterHealthLevel string
 
 // List of ClusterHealthLevel
 const (
-	CLUSTER ClusterHealthLevel = "cluster"
-	INDICES ClusterHealthLevel = "indices"
-	SHARDS ClusterHealthLevel = "shards"
-	AWARENESS_ATTRIBUTES ClusterHealthLevel = "awareness_attributes"
+	CLUSTERHEALTHLEVEL_CLUSTER ClusterHealthLevel = "cluster"
+	CLUSTERHEALTHLEVEL_INDICES ClusterHealthLevel = "indices"
+	CLUSTERHEALTHLEVEL_SHARDS ClusterHealthLevel = "shards"
+	CLUSTERHEALTHLEVEL_AWARENESS_ATTRIBUTES ClusterHealthLevel = "awareness_attributes"
 )
 
 // All allowed values of ClusterHealthLevel enum

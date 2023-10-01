@@ -20,9 +20,9 @@ type RefreshEnum string
 
 // List of RefreshEnum
 const (
-	TRUE RefreshEnum = "true"
-	FALSE RefreshEnum = "false"
-	WAIT_FOR RefreshEnum = "wait_for"
+	REFRESHENUM_TRUE RefreshEnum = "true"
+	REFRESHENUM_FALSE RefreshEnum = "false"
+	REFRESHENUM_WAIT_FOR RefreshEnum = "wait_for"
 )
 
 // All allowed values of RefreshEnum enum

@@ -20,10 +20,10 @@ type SearchTypeMulti string
 
 // List of SearchTypeMulti
 const (
-	QUERY_THEN_FETCH SearchTypeMulti = "query_then_fetch"
-	QUERY_AND_FETCH SearchTypeMulti = "query_and_fetch"
-	DFS_QUERY_THEN_FETCH SearchTypeMulti = "dfs_query_then_fetch"
-	DFS_QUERY_AND_FETCH SearchTypeMulti = "dfs_query_and_fetch"
+	SEARCHTYPEMULTI_QUERY_THEN_FETCH SearchTypeMulti = "query_then_fetch"
+	SEARCHTYPEMULTI_QUERY_AND_FETCH SearchTypeMulti = "query_and_fetch"
+	SEARCHTYPEMULTI_DFS_QUERY_THEN_FETCH SearchTypeMulti = "dfs_query_then_fetch"
+	SEARCHTYPEMULTI_DFS_QUERY_AND_FETCH SearchTypeMulti = "dfs_query_and_fetch"
 )
 
 // All allowed values of SearchTypeMulti enum

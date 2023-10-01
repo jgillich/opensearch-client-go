@@ -20,9 +20,9 @@ type SuggestMode string
 
 // List of SuggestMode
 const (
-	MISSING SuggestMode = "missing"
-	POPULAR SuggestMode = "popular"
-	ALWAYS SuggestMode = "always"
+	SUGGESTMODE_MISSING SuggestMode = "missing"
+	SUGGESTMODE_POPULAR SuggestMode = "popular"
+	SUGGESTMODE_ALWAYS SuggestMode = "always"
 )
 
 // All allowed values of SuggestMode enum

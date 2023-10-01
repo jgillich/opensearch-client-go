@@ -20,9 +20,9 @@ type NodesStatLevel string
 
 // List of NodesStatLevel
 const (
-	INDICES NodesStatLevel = "indices"
-	NODE NodesStatLevel = "node"
-	SHARDS NodesStatLevel = "shards"
+	NODESSTATLEVEL_INDICES NodesStatLevel = "indices"
+	NODESSTATLEVEL_NODE NodesStatLevel = "node"
+	NODESSTATLEVEL_SHARDS NodesStatLevel = "shards"
 )
 
 // All allowed values of NodesStatLevel enum

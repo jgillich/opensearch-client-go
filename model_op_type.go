@@ -20,8 +20,8 @@ type OpType string
 
 // List of OpType
 const (
-	INDEX OpType = "index"
-	CREATE OpType = "create"
+	OPTYPE_INDEX OpType = "index"
+	OPTYPE_CREATE OpType = "create"
 )
 
 // All allowed values of OpType enum

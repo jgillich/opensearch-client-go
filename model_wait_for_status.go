@@ -20,9 +20,9 @@ type WaitForStatus string
 
 // List of WaitForStatus
 const (
-	GREEN WaitForStatus = "green"
-	YELLOW WaitForStatus = "yellow"
-	RED WaitForStatus = "red"
+	WAITFORSTATUS_GREEN WaitForStatus = "green"
+	WAITFORSTATUS_YELLOW WaitForStatus = "yellow"
+	WAITFORSTATUS_RED WaitForStatus = "red"
 )
 
 // All allowed values of WaitForStatus enum

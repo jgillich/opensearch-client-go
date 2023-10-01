@@ -20,12 +20,12 @@ type WaitForEvents string
 
 // List of WaitForEvents
 const (
-	IMMEDIATE WaitForEvents = "immediate"
-	URGENT WaitForEvents = "urgent"
-	HIGH WaitForEvents = "high"
-	NORMAL WaitForEvents = "normal"
-	LOW WaitForEvents = "low"
-	LANGUID WaitForEvents = "languid"
+	WAITFOREVENTS_IMMEDIATE WaitForEvents = "immediate"
+	WAITFOREVENTS_URGENT WaitForEvents = "urgent"
+	WAITFOREVENTS_HIGH WaitForEvents = "high"
+	WAITFOREVENTS_NORMAL WaitForEvents = "normal"
+	WAITFOREVENTS_LOW WaitForEvents = "low"
+	WAITFOREVENTS_LANGUID WaitForEvents = "languid"
 )
 
 // All allowed values of WaitForEvents enum

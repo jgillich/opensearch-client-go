@@ -20,9 +20,9 @@ type Health string
 
 // List of Health
 const (
-	GREEN Health = "green"
-	YELLOW Health = "yellow"
-	RED Health = "red"
+	HEALTH_GREEN Health = "green"
+	HEALTH_YELLOW Health = "yellow"
+	HEALTH_RED Health = "red"
 )
 
 // All allowed values of Health enum

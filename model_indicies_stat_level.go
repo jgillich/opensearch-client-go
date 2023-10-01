@@ -20,9 +20,9 @@ type IndiciesStatLevel string
 
 // List of IndiciesStatLevel
 const (
-	CLUSTER IndiciesStatLevel = "cluster"
-	INDICES IndiciesStatLevel = "indices"
-	SHARDS IndiciesStatLevel = "shards"
+	INDICIESSTATLEVEL_CLUSTER IndiciesStatLevel = "cluster"
+	INDICIESSTATLEVEL_INDICES IndiciesStatLevel = "indices"
+	INDICIESSTATLEVEL_SHARDS IndiciesStatLevel = "shards"
 )
 
 // All allowed values of IndiciesStatLevel enum

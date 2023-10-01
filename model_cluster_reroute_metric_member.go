@@ -20,14 +20,14 @@ type ClusterRerouteMetricMember string
 
 // List of ClusterRerouteMetric_Member
 const (
-	ALL ClusterRerouteMetricMember = "_all"
-	BLOCKS ClusterRerouteMetricMember = "blocks"
-	METADATA ClusterRerouteMetricMember = "metadata"
-	NODES ClusterRerouteMetricMember = "nodes"
-	ROUTING_TABLE ClusterRerouteMetricMember = "routing_table"
-	MASTER_NODE ClusterRerouteMetricMember = "master_node"
-	CLUSTER_MANAGER_NODE ClusterRerouteMetricMember = "cluster_manager_node"
-	VERSION ClusterRerouteMetricMember = "version"
+	CLUSTERREROUTEMETRICMEMBER_ALL ClusterRerouteMetricMember = "_all"
+	CLUSTERREROUTEMETRICMEMBER_BLOCKS ClusterRerouteMetricMember = "blocks"
+	CLUSTERREROUTEMETRICMEMBER_METADATA ClusterRerouteMetricMember = "metadata"
+	CLUSTERREROUTEMETRICMEMBER_NODES ClusterRerouteMetricMember = "nodes"
+	CLUSTERREROUTEMETRICMEMBER_ROUTING_TABLE ClusterRerouteMetricMember = "routing_table"
+	CLUSTERREROUTEMETRICMEMBER_MASTER_NODE ClusterRerouteMetricMember = "master_node"
+	CLUSTERREROUTEMETRICMEMBER_CLUSTER_MANAGER_NODE ClusterRerouteMetricMember = "cluster_manager_node"
+	CLUSTERREROUTEMETRICMEMBER_VERSION ClusterRerouteMetricMember = "version"
 )
 
 // All allowed values of ClusterRerouteMetricMember enum

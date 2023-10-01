@@ -20,9 +20,9 @@ type GroupBy string
 
 // List of GroupBy
 const (
-	NODES GroupBy = "nodes"
-	PARENTS GroupBy = "parents"
-	NONE GroupBy = "none"
+	GROUPBY_NODES GroupBy = "nodes"
+	GROUPBY_PARENTS GroupBy = "parents"
+	GROUPBY_NONE GroupBy = "none"
 )
 
 // All allowed values of GroupBy enum

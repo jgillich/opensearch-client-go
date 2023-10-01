@@ -20,10 +20,10 @@ type VersionType string
 
 // List of VersionType
 const (
-	INTERNAL VersionType = "internal"
-	EXTERNAL VersionType = "external"
-	EXTERNAL_GTE VersionType = "external_gte"
-	FORCE VersionType = "force"
+	VERSIONTYPE_INTERNAL VersionType = "internal"
+	VERSIONTYPE_EXTERNAL VersionType = "external"
+	VERSIONTYPE_EXTERNAL_GTE VersionType = "external_gte"
+	VERSIONTYPE_FORCE VersionType = "force"
 )
 
 // All allowed values of VersionType enum

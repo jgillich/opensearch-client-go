@@ -20,9 +20,9 @@ type SampleType string
 
 // List of SampleType
 const (
-	CPU SampleType = "cpu"
-	WAIT SampleType = "wait"
-	BLOCK SampleType = "block"
+	SAMPLETYPE_CPU SampleType = "cpu"
+	SAMPLETYPE_WAIT SampleType = "wait"
+	SAMPLETYPE_BLOCK SampleType = "block"
 )
 
 // All allowed values of SampleType enum

@@ -20,9 +20,9 @@ type DataStreamStatus string
 
 // List of DataStreamStatus
 const (
-	GREEN DataStreamStatus = "green"
-	YELLOW DataStreamStatus = "yellow"
-	RED DataStreamStatus = "red"
+	DATASTREAMSTATUS_GREEN DataStreamStatus = "green"
+	DATASTREAMSTATUS_YELLOW DataStreamStatus = "yellow"
+	DATASTREAMSTATUS_RED DataStreamStatus = "red"
 )
 
 // All allowed values of DataStreamStatus enum

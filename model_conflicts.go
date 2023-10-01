@@ -20,8 +20,8 @@ type Conflicts string
 
 // List of Conflicts
 const (
-	ABORT Conflicts = "abort"
-	PROCEED Conflicts = "proceed"
+	CONFLICTS_ABORT Conflicts = "abort"
+	CONFLICTS_PROCEED Conflicts = "proceed"
 )
 
 // All allowed values of Conflicts enum

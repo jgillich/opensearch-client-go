@@ -20,17 +20,17 @@ type Bytes string
 
 // List of Bytes
 const (
-	B Bytes = "b"
-	K Bytes = "k"
-	KB Bytes = "kb"
-	M Bytes = "m"
-	MB Bytes = "mb"
-	G Bytes = "g"
-	GB Bytes = "gb"
-	T Bytes = "t"
-	TB Bytes = "tb"
-	P Bytes = "p"
-	PB Bytes = "pb"
+	BYTES_B Bytes = "b"
+	BYTES_K Bytes = "k"
+	BYTES_KB Bytes = "kb"
+	BYTES_M Bytes = "m"
+	BYTES_MB Bytes = "mb"
+	BYTES_G Bytes = "g"
+	BYTES_GB Bytes = "gb"
+	BYTES_T Bytes = "t"
+	BYTES_TB Bytes = "tb"
+	BYTES_P Bytes = "p"
+	BYTES_PB Bytes = "pb"
 )
 
 // All allowed values of Bytes enum

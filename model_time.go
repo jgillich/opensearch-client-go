@@ -20,13 +20,13 @@ type Time string
 
 // List of Time
 const (
-	D Time = "d"
-	H Time = "h"
-	M Time = "m"
-	S Time = "s"
-	MS Time = "ms"
-	MICROS Time = "micros"
-	NANOS Time = "nanos"
+	TIME_D Time = "d"
+	TIME_H Time = "h"
+	TIME_M Time = "m"
+	TIME_S Time = "s"
+	TIME_MS Time = "ms"
+	TIME_MICROS Time = "micros"
+	TIME_NANOS Time = "nanos"
 )
 
 // All allowed values of Time enum

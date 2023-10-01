@@ -20,8 +20,8 @@ type SearchType string
 
 // List of SearchType
 const (
-	QUERY_THEN_FETCH SearchType = "query_then_fetch"
-	DFS_QUERY_THEN_FETCH SearchType = "dfs_query_then_fetch"
+	SEARCHTYPE_QUERY_THEN_FETCH SearchType = "query_then_fetch"
+	SEARCHTYPE_DFS_QUERY_THEN_FETCH SearchType = "dfs_query_then_fetch"
 )
 
 // All allowed values of SearchType enum

@@ -20,8 +20,8 @@ type DefaultOperator string
 
 // List of DefaultOperator
 const (
-	AND DefaultOperator = "AND"
-	OR DefaultOperator = "OR"
+	DEFAULTOPERATOR_AND DefaultOperator = "AND"
+	DEFAULTOPERATOR_OR DefaultOperator = "OR"
 )
 
 // All allowed values of DefaultOperator enum
