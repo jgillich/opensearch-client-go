@@ -20,6 +20,9 @@ jobs:
           generator: go
           openapi-url: https://raw.githubusercontent.com/opensearch-project/opensearch-api-specification/main/OpenSearch.openapi.json
           command-args: --git-repo-id opensearch-client-go --git-user-id jgillich -p packageName=opensearch,enumClassPrefix=true -o .
+      # TODO there might be a better solution
+      - name: Fix duplicate
+        run: sed -i 's/NullableTime/OpensearchNullableTime/g' model_time.go
       - name: Tidy
         run: go mod tidy
       - name: Commit and push
