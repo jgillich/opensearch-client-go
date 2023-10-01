@@ -22,8 +22,8 @@ type Role struct {
 	Reserved *bool `json:"reserved,omitempty"`
 	Hidden *bool `json:"hidden,omitempty"`
 	Description *string `json:"description,omitempty"`
-	ClusterPermission []string `json:"cluster_permission,omitempty"`
-	IndexPermission *IndexPermission `json:"index_permission,omitempty"`
+	ClusterPermission []string `json:"cluster_permissions,omitempty"`
+	IndexPermission *IndexPermission `json:"index_permissions,omitempty"`
 	TenantPermissions []string `json:"tenant_permissions,omitempty"`
 	Static *bool `json:"static,omitempty"`
 }
@@ -289,10 +289,10 @@ func (o Role) ToMap() (map[string]interface{}, error) {
 		toSerialize["description"] = o.Description
 	}
 	if !IsNil(o.ClusterPermission) {
-		toSerialize["cluster_permission"] = o.ClusterPermission
+		toSerialize["cluster_permissions"] = o.ClusterPermission
 	}
 	if !IsNil(o.IndexPermission) {
-		toSerialize["index_permission"] = o.IndexPermission
+		toSerialize["index_permissions"] = o.IndexPermission
 	}
 	if !IsNil(o.TenantPermissions) {
 		toSerialize["tenant_permissions"] = o.TenantPermissions
