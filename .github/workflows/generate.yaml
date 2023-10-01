@@ -18,14 +18,12 @@ jobs:
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: go
-          openapi-url: https://raw.githubusercontent.com/opensearch-project/opensearch-api-specification/main/OpenSearch.openapi.json
+          openapi-file: openapi.json
+          #openapi-url: https://raw.githubusercontent.com/opensearch-project/opensearch-api-specification/main/OpenSearch.openapi.json
           command-args: --git-repo-id opensearch-client-go --git-user-id jgillich -p packageName=opensearch,enumClassPrefix=true -o .
       # TODO there might be a better solution
       - name: Fix duplicate
         run: sed -i 's/NullableTime/OpensearchNullableTime/g' model_time.go
-      - run: |
-          sed -i 's/cluster_permission/cluster_permissions/g' model_role.go
-          sed -i 's/index_permission/index_permissions/g' model_role.go
       - name: Tidy
         run: go mod tidy
       - name: Commit and push
