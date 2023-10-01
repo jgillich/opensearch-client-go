@@ -22,8 +22,8 @@ type Role struct {
 	Reserved *bool `json:"reserved,omitempty"`
 	Hidden *bool `json:"hidden,omitempty"`
 	Description *string `json:"description,omitempty"`
-	ClusterPermission []string `json:"cluster_permissions,omitempty"`
-	IndexPermission *IndexPermission `json:"index_permissions,omitempty"`
+	ClusterPermissions []string `json:"cluster_permissions,omitempty"`
+	IndexPermissions []IndexPermission `json:"index_permissions,omitempty"`
 	TenantPermissions []string `json:"tenant_permissions,omitempty"`
 	Static *bool `json:"static,omitempty"`
 }
@@ -141,68 +141,68 @@ func (o *Role) SetDescription(v string) {
 	o.Description = &v
 }
 
-// GetClusterPermission returns the ClusterPermission field value if set, zero value otherwise.
-func (o *Role) GetClusterPermission() []string {
-	if o == nil || IsNil(o.ClusterPermission) {
+// GetClusterPermissions returns the ClusterPermissions field value if set, zero value otherwise.
+func (o *Role) GetClusterPermissions() []string {
+	if o == nil || IsNil(o.ClusterPermissions) {
 		var ret []string
 		return ret
 	}
-	return o.ClusterPermission
+	return o.ClusterPermissions
 }
 
-// GetClusterPermissionOk returns a tuple with the ClusterPermission field value if set, nil otherwise
+// GetClusterPermissionsOk returns a tuple with the ClusterPermissions field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Role) GetClusterPermissionOk() ([]string, bool) {
-	if o == nil || IsNil(o.ClusterPermission) {
+func (o *Role) GetClusterPermissionsOk() ([]string, bool) {
+	if o == nil || IsNil(o.ClusterPermissions) {
 		return nil, false
 	}
-	return o.ClusterPermission, true
+	return o.ClusterPermissions, true
 }
 
-// HasClusterPermission returns a boolean if a field has been set.
-func (o *Role) HasClusterPermission() bool {
-	if o != nil && !IsNil(o.ClusterPermission) {
+// HasClusterPermissions returns a boolean if a field has been set.
+func (o *Role) HasClusterPermissions() bool {
+	if o != nil && !IsNil(o.ClusterPermissions) {
 		return true
 	}
 
 	return false
 }
 
-// SetClusterPermission gets a reference to the given []string and assigns it to the ClusterPermission field.
-func (o *Role) SetClusterPermission(v []string) {
-	o.ClusterPermission = v
+// SetClusterPermissions gets a reference to the given []string and assigns it to the ClusterPermissions field.
+func (o *Role) SetClusterPermissions(v []string) {
+	o.ClusterPermissions = v
 }
 
-// GetIndexPermission returns the IndexPermission field value if set, zero value otherwise.
-func (o *Role) GetIndexPermission() IndexPermission {
-	if o == nil || IsNil(o.IndexPermission) {
-		var ret IndexPermission
+// GetIndexPermissions returns the IndexPermissions field value if set, zero value otherwise.
+func (o *Role) GetIndexPermissions() []IndexPermission {
+	if o == nil || IsNil(o.IndexPermissions) {
+		var ret []IndexPermission
 		return ret
 	}
-	return *o.IndexPermission
+	return o.IndexPermissions
 }
 
-// GetIndexPermissionOk returns a tuple with the IndexPermission field value if set, nil otherwise
+// GetIndexPermissionsOk returns a tuple with the IndexPermissions field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Role) GetIndexPermissionOk() (*IndexPermission, bool) {
-	if o == nil || IsNil(o.IndexPermission) {
+func (o *Role) GetIndexPermissionsOk() ([]IndexPermission, bool) {
+	if o == nil || IsNil(o.IndexPermissions) {
 		return nil, false
 	}
-	return o.IndexPermission, true
+	return o.IndexPermissions, true
 }
 
-// HasIndexPermission returns a boolean if a field has been set.
-func (o *Role) HasIndexPermission() bool {
-	if o != nil && !IsNil(o.IndexPermission) {
+// HasIndexPermissions returns a boolean if a field has been set.
+func (o *Role) HasIndexPermissions() bool {
+	if o != nil && !IsNil(o.IndexPermissions) {
 		return true
 	}
 
 	return false
 }
 
-// SetIndexPermission gets a reference to the given IndexPermission and assigns it to the IndexPermission field.
-func (o *Role) SetIndexPermission(v IndexPermission) {
-	o.IndexPermission = &v
+// SetIndexPermissions gets a reference to the given []IndexPermission and assigns it to the IndexPermissions field.
+func (o *Role) SetIndexPermissions(v []IndexPermission) {
+	o.IndexPermissions = v
 }
 
 // GetTenantPermissions returns the TenantPermissions field value if set, zero value otherwise.
@@ -288,11 +288,11 @@ func (o Role) ToMap() (map[string]interface{}, error) {
 	if !IsNil(o.Description) {
 		toSerialize["description"] = o.Description
 	}
-	if !IsNil(o.ClusterPermission) {
-		toSerialize["cluster_permissions"] = o.ClusterPermission
+	if !IsNil(o.ClusterPermissions) {
+		toSerialize["cluster_permissions"] = o.ClusterPermissions
 	}
-	if !IsNil(o.IndexPermission) {
-		toSerialize["index_permissions"] = o.IndexPermission
+	if !IsNil(o.IndexPermissions) {
+		toSerialize["index_permissions"] = o.IndexPermissions
 	}
 	if !IsNil(o.TenantPermissions) {
 		toSerialize["tenant_permissions"] = o.TenantPermissions

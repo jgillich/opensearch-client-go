@@ -30785,11 +30785,18 @@ components:
       type: object
     Role:
       example:
+        cluster_permissions:
+        - cluster_permissions
+        - cluster_permissions
         static: true
         hidden: true
         reserved: true
-        index_permission:
-          allowed_actions:
+        tenant_permissions:
+        - tenant_permissions
+        - tenant_permissions
+        description: description
+        index_permissions:
+        - allowed_actions:
           - allowed_actions
           - allowed_actions
           index_patterns:
@@ -30801,13 +30808,18 @@ components:
           masked_fields:
           - masked_fields
           - masked_fields
-        tenant_permissions:
-        - tenant_permissions
-        - tenant_permissions
-        description: description
-        cluster_permission:
-        - cluster_permission
-        - cluster_permission
+        - allowed_actions:
+          - allowed_actions
+          - allowed_actions
+          index_patterns:
+          - index_patterns
+          - index_patterns
+          fls:
+          - fls
+          - fls
+          masked_fields:
+          - masked_fields
+          - masked_fields
       properties:
         reserved:
           type: boolean
@@ -30815,12 +30827,14 @@ components:
           type: boolean
         description:
           type: string
-        cluster_permission:
+        cluster_permissions:
           items:
             type: string
           type: array
-        index_permission:
-          $ref: '#/components/schemas/IndexPermission'
+        index_permissions:
+          items:
+            $ref: '#/components/schemas/IndexPermission'
+          type: array
         tenant_permissions:
           items:
             type: string

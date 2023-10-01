@@ -7,8 +7,8 @@ Name | Type | Description | Notes
 **Reserved** | Pointer to **bool** |  | [optional] 
 **Hidden** | Pointer to **bool** |  | [optional] 
 **Description** | Pointer to **string** |  | [optional] 
-**ClusterPermission** | Pointer to **[]string** |  | [optional] 
-**IndexPermission** | Pointer to [**IndexPermission**](IndexPermission.md) |  | [optional] 
+**ClusterPermissions** | Pointer to **[]string** |  | [optional] 
+**IndexPermissions** | Pointer to [**[]IndexPermission**](IndexPermission.md) |  | [optional] 
 **TenantPermissions** | Pointer to **[]string** |  | [optional] 
 **Static** | Pointer to **bool** |  | [optional] 
 
@@ -106,55 +106,55 @@ SetDescription sets Description field to given value.
 
 HasDescription returns a boolean if a field has been set.
 
-### GetClusterPermission
+### GetClusterPermissions
 
-`func (o *Role) GetClusterPermission() []string`
+`func (o *Role) GetClusterPermissions() []string`
 
-GetClusterPermission returns the ClusterPermission field if non-nil, zero value otherwise.
+GetClusterPermissions returns the ClusterPermissions field if non-nil, zero value otherwise.
 
-### GetClusterPermissionOk
+### GetClusterPermissionsOk
 
-`func (o *Role) GetClusterPermissionOk() (*[]string, bool)`
+`func (o *Role) GetClusterPermissionsOk() (*[]string, bool)`
 
-GetClusterPermissionOk returns a tuple with the ClusterPermission field if it's non-nil, zero value otherwise
+GetClusterPermissionsOk returns a tuple with the ClusterPermissions field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetClusterPermission
+### SetClusterPermissions
 
-`func (o *Role) SetClusterPermission(v []string)`
+`func (o *Role) SetClusterPermissions(v []string)`
 
-SetClusterPermission sets ClusterPermission field to given value.
+SetClusterPermissions sets ClusterPermissions field to given value.
 
-### HasClusterPermission
+### HasClusterPermissions
 
-`func (o *Role) HasClusterPermission() bool`
+`func (o *Role) HasClusterPermissions() bool`
 
-HasClusterPermission returns a boolean if a field has been set.
+HasClusterPermissions returns a boolean if a field has been set.
 
-### GetIndexPermission
+### GetIndexPermissions
 
-`func (o *Role) GetIndexPermission() IndexPermission`
+`func (o *Role) GetIndexPermissions() []IndexPermission`
 
-GetIndexPermission returns the IndexPermission field if non-nil, zero value otherwise.
+GetIndexPermissions returns the IndexPermissions field if non-nil, zero value otherwise.
 
-### GetIndexPermissionOk
+### GetIndexPermissionsOk
 
-`func (o *Role) GetIndexPermissionOk() (*IndexPermission, bool)`
+`func (o *Role) GetIndexPermissionsOk() (*[]IndexPermission, bool)`
 
-GetIndexPermissionOk returns a tuple with the IndexPermission field if it's non-nil, zero value otherwise
+GetIndexPermissionsOk returns a tuple with the IndexPermissions field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
-### SetIndexPermission
+### SetIndexPermissions
 
-`func (o *Role) SetIndexPermission(v IndexPermission)`
+`func (o *Role) SetIndexPermissions(v []IndexPermission)`
 
-SetIndexPermission sets IndexPermission field to given value.
+SetIndexPermissions sets IndexPermissions field to given value.
 
-### HasIndexPermission
+### HasIndexPermissions
 
-`func (o *Role) HasIndexPermission() bool`
+`func (o *Role) HasIndexPermissions() bool`
 
-HasIndexPermission returns a boolean if a field has been set.
+HasIndexPermissions returns a boolean if a field has been set.
 
 ### GetTenantPermissions
 
