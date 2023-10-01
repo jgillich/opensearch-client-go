@@ -83,38 +83,38 @@ func (v Time) Ptr() *Time {
 	return &v
 }
 
-type NullableTime struct {
+type OpensearchNullableTime struct {
 	value *Time
 	isSet bool
 }
 
-func (v NullableTime) Get() *Time {
+func (v OpensearchNullableTime) Get() *Time {
 	return v.value
 }
 
-func (v *NullableTime) Set(val *Time) {
+func (v *OpensearchNullableTime) Set(val *Time) {
 	v.value = val
 	v.isSet = true
 }
 
-func (v NullableTime) IsSet() bool {
+func (v OpensearchNullableTime) IsSet() bool {
 	return v.isSet
 }
 
-func (v *NullableTime) Unset() {
+func (v *OpensearchNullableTime) Unset() {
 	v.value = nil
 	v.isSet = false
 }
 
-func NewNullableTime(val *Time) *NullableTime {
-	return &NullableTime{value: val, isSet: true}
+func NewOpensearchNullableTime(val *Time) *OpensearchNullableTime {
+	return &OpensearchNullableTime{value: val, isSet: true}
 }
 
-func (v NullableTime) MarshalJSON() ([]byte, error) {
+func (v OpensearchNullableTime) MarshalJSON() ([]byte, error) {
 	return json.Marshal(v.value)
 }
 
-func (v *NullableTime) UnmarshalJSON(src []byte) error {
+func (v *OpensearchNullableTime) UnmarshalJSON(src []byte) error {
 	v.isSet = true
 	return json.Unmarshal(src, &v.value)
 }
