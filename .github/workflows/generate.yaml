@@ -23,6 +23,9 @@ jobs:
       # TODO there might be a better solution
       - name: Fix duplicate
         run: sed -i 's/NullableTime/OpensearchNullableTime/g' model_time.go
+      - run: |
+          sed -i 's/cluster_permission/cluster_permissions/g' model_role.go
+          sed -i 's/index_permission/index_permissions/g' model_role.go
       - name: Tidy
         run: go mod tidy
       - name: Commit and push
