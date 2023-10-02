@@ -18,8 +18,7 @@ jobs:
         uses: openapi-generators/openapitools-generator-action@v1
         with:
           generator: go
-          openapi-file: openapi.json
-          #openapi-url: https://raw.githubusercontent.com/opensearch-project/opensearch-api-specification/main/OpenSearch.openapi.json
+          openapi-url: https://raw.githubusercontent.com/opensearch-project/opensearch-api-specification/main/OpenSearch.openapi.json
           command-args: --git-repo-id opensearch-client-go --git-user-id jgillich -p packageName=opensearch,enumClassPrefix=true -o .
       # TODO there might be a better solution
       - name: Fix duplicate
