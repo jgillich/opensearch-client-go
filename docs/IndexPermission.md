@@ -5,6 +5,7 @@
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
 **IndexPatterns** | Pointer to **[]string** |  | [optional] 
+**Dls** | Pointer to **string** |  | [optional] 
 **Fls** | Pointer to **[]string** |  | [optional] 
 **MaskedFields** | Pointer to **[]string** |  | [optional] 
 **AllowedActions** | Pointer to **[]string** |  | [optional] 
@@ -52,6 +53,31 @@ SetIndexPatterns sets IndexPatterns field to given value.
 `func (o *IndexPermission) HasIndexPatterns() bool`
 
 HasIndexPatterns returns a boolean if a field has been set.
+
+### GetDls
+
+`func (o *IndexPermission) GetDls() string`
+
+GetDls returns the Dls field if non-nil, zero value otherwise.
+
+### GetDlsOk
+
+`func (o *IndexPermission) GetDlsOk() (*string, bool)`
+
+GetDlsOk returns a tuple with the Dls field if it's non-nil, zero value otherwise
+and a boolean to check if the value has been set.
+
+### SetDls
+
+`func (o *IndexPermission) SetDls(v string)`
+
+SetDls sets Dls field to given value.
+
+### HasDls
+
+`func (o *IndexPermission) HasDls() bool`
+
+HasDls returns a boolean if a field has been set.
 
 ### GetFls
 

@@ -24,7 +24,7 @@ type Role struct {
 	Description *string `json:"description,omitempty"`
 	ClusterPermissions []string `json:"cluster_permissions,omitempty"`
 	IndexPermissions []IndexPermission `json:"index_permissions,omitempty"`
-	TenantPermissions []string `json:"tenant_permissions,omitempty"`
+	TenantPermissions []TenantPermission `json:"tenant_permissions,omitempty"`
 	Static *bool `json:"static,omitempty"`
 }
 
@@ -206,9 +206,9 @@ func (o *Role) SetIndexPermissions(v []IndexPermission) {
 }
 
 // GetTenantPermissions returns the TenantPermissions field value if set, zero value otherwise.
-func (o *Role) GetTenantPermissions() []string {
+func (o *Role) GetTenantPermissions() []TenantPermission {
 	if o == nil || IsNil(o.TenantPermissions) {
-		var ret []string
+		var ret []TenantPermission
 		return ret
 	}
 	return o.TenantPermissions
@@ -216,7 +216,7 @@ func (o *Role) GetTenantPermissions() []string {
 
 // GetTenantPermissionsOk returns a tuple with the TenantPermissions field value if set, nil otherwise
 // and a boolean to check if the value has been set.
-func (o *Role) GetTenantPermissionsOk() ([]string, bool) {
+func (o *Role) GetTenantPermissionsOk() ([]TenantPermission, bool) {
 	if o == nil || IsNil(o.TenantPermissions) {
 		return nil, false
 	}
@@ -232,8 +232,8 @@ func (o *Role) HasTenantPermissions() bool {
 	return false
 }
 
-// SetTenantPermissions gets a reference to the given []string and assigns it to the TenantPermissions field.
-func (o *Role) SetTenantPermissions(v []string) {
+// SetTenantPermissions gets a reference to the given []TenantPermission and assigns it to the TenantPermissions field.
+func (o *Role) SetTenantPermissions(v []TenantPermission) {
 	o.TenantPermissions = v
 }
 

@@ -548,6 +548,7 @@ Class | Method | HTTP request | Description
  - [StatusMember](docs/StatusMember.md)
  - [SuggestMode](docs/SuggestMode.md)
  - [Tenant](docs/Tenant.md)
+ - [TenantPermission](docs/TenantPermission.md)
  - [Time](docs/Time.md)
  - [Total](docs/Total.md)
  - [UpdateAuditConfigurationResponseContent](docs/UpdateAuditConfigurationResponseContent.md)

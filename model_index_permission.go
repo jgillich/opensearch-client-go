@@ -20,6 +20,7 @@ var _ MappedNullable = &IndexPermission{}
 // IndexPermission struct for IndexPermission
 type IndexPermission struct {
 	IndexPatterns []string `json:"index_patterns,omitempty"`
+	Dls *string `json:"dls,omitempty"`
 	Fls []string `json:"fls,omitempty"`
 	MaskedFields []string `json:"masked_fields,omitempty"`
 	AllowedActions []string `json:"allowed_actions,omitempty"`
@@ -72,6 +73,38 @@ func (o *IndexPermission) HasIndexPatterns() bool {
 // SetIndexPatterns gets a reference to the given []string and assigns it to the IndexPatterns field.
 func (o *IndexPermission) SetIndexPatterns(v []string) {
 	o.IndexPatterns = v
+}
+
+// GetDls returns the Dls field value if set, zero value otherwise.
+func (o *IndexPermission) GetDls() string {
+	if o == nil || IsNil(o.Dls) {
+		var ret string
+		return ret
+	}
+	return *o.Dls
+}
+
+// GetDlsOk returns a tuple with the Dls field value if set, nil otherwise
+// and a boolean to check if the value has been set.
+func (o *IndexPermission) GetDlsOk() (*string, bool) {
+	if o == nil || IsNil(o.Dls) {
+		return nil, false
+	}
+	return o.Dls, true
+}
+
+// HasDls returns a boolean if a field has been set.
+func (o *IndexPermission) HasDls() bool {
+	if o != nil && !IsNil(o.Dls) {
+		return true
+	}
+
+	return false
+}
+
+// SetDls gets a reference to the given string and assigns it to the Dls field.
+func (o *IndexPermission) SetDls(v string) {
+	o.Dls = &v
 }
 
 // GetFls returns the Fls field value if set, zero value otherwise.
@@ -182,6 +215,9 @@ func (o IndexPermission) ToMap() (map[string]interface{}, error) {
 	toSerialize := map[string]interface{}{}
 	if !IsNil(o.IndexPatterns) {
 		toSerialize["index_patterns"] = o.IndexPatterns
+	}
+	if !IsNil(o.Dls) {
+		toSerialize["dls"] = o.Dls
 	}
 	if !IsNil(o.Fls) {
 		toSerialize["fls"] = o.Fls

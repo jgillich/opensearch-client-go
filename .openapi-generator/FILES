@@ -117,6 +117,7 @@ docs/ShardStatistics.md
 docs/StatusMember.md
 docs/SuggestMode.md
 docs/Tenant.md
+docs/TenantPermission.md
 docs/Time.md
 docs/Total.md
 docs/UpdateAuditConfigurationResponseContent.md
@@ -242,6 +243,7 @@ model_shard_statistics.go
 model_status_member.go
 model_suggest_mode.go
 model_tenant.go
+model_tenant_permission.go
 model_time.go
 model_total.go
 model_update_audit_configuration_response_content.go

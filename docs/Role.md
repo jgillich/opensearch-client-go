@@ -9,7 +9,7 @@ Name | Type | Description | Notes
 **Description** | Pointer to **string** |  | [optional] 
 **ClusterPermissions** | Pointer to **[]string** |  | [optional] 
 **IndexPermissions** | Pointer to [**[]IndexPermission**](IndexPermission.md) |  | [optional] 
-**TenantPermissions** | Pointer to **[]string** |  | [optional] 
+**TenantPermissions** | Pointer to [**[]TenantPermission**](TenantPermission.md) |  | [optional] 
 **Static** | Pointer to **bool** |  | [optional] 
 
 ## Methods
@@ -158,20 +158,20 @@ HasIndexPermissions returns a boolean if a field has been set.
 
 ### GetTenantPermissions
 
-`func (o *Role) GetTenantPermissions() []string`
+`func (o *Role) GetTenantPermissions() []TenantPermission`
 
 GetTenantPermissions returns the TenantPermissions field if non-nil, zero value otherwise.
 
 ### GetTenantPermissionsOk
 
-`func (o *Role) GetTenantPermissionsOk() (*[]string, bool)`
+`func (o *Role) GetTenantPermissionsOk() (*[]TenantPermission, bool)`
 
 GetTenantPermissionsOk returns a tuple with the TenantPermissions field if it's non-nil, zero value otherwise
 and a boolean to check if the value has been set.
 
 ### SetTenantPermissions
 
-`func (o *Role) SetTenantPermissions(v []string)`
+`func (o *Role) SetTenantPermissions(v []TenantPermission)`
 
 SetTenantPermissions sets TenantPermissions field to given value.
 

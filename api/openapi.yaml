@@ -30105,6 +30105,7 @@ components:
         index_patterns:
         - index_patterns
         - index_patterns
+        dls: dls
         fls:
         - fls
         - fls
@@ -30116,6 +30117,8 @@ components:
           items:
             type: string
           type: array
+        dls:
+          type: string
         fls:
           items:
             type: string
@@ -30792,8 +30795,18 @@ components:
         hidden: true
         reserved: true
         tenant_permissions:
-        - tenant_permissions
-        - tenant_permissions
+        - allowed_actions:
+          - allowed_actions
+          - allowed_actions
+          tenant_patterns:
+          - tenant_patterns
+          - tenant_patterns
+        - allowed_actions:
+          - allowed_actions
+          - allowed_actions
+          tenant_patterns:
+          - tenant_patterns
+          - tenant_patterns
         description: description
         index_permissions:
         - allowed_actions:
@@ -30802,6 +30815,7 @@ components:
           index_patterns:
           - index_patterns
           - index_patterns
+          dls: dls
           fls:
           - fls
           - fls
@@ -30814,6 +30828,7 @@ components:
           index_patterns:
           - index_patterns
           - index_patterns
+          dls: dls
           fls:
           - fls
           - fls
@@ -30837,7 +30852,7 @@ components:
           type: array
         tenant_permissions:
           items:
-            type: string
+            $ref: '#/components/schemas/TenantPermission'
           type: array
         static:
           type: boolean
@@ -31193,6 +31208,24 @@ components:
           type: string
         static:
           type: boolean
+      type: object
+    TenantPermission:
+      example:
+        allowed_actions:
+        - allowed_actions
+        - allowed_actions
+        tenant_patterns:
+        - tenant_patterns
+        - tenant_patterns
+      properties:
+        tenant_patterns:
+          items:
+            type: string
+          type: array
+        allowed_actions:
+          items:
+            type: string
+          type: array
       type: object
     TenantsMap:
       additionalProperties:
